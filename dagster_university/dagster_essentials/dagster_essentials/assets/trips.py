@@ -21,7 +21,7 @@ def taxi_zones_file () -> None:
       The raw csv files for the taxi zones dataset.
     """
     taxi_zones = requests.get(
-        f"https://community-engineering-artifacts.s3.us-west-2.amazonaws.com/dagster-university/data/taxi_zones.csv"
+        "https://community-engineering-artifacts.s3.us-west-2.amazonaws.com/dagster-university/data/taxi_zones.csv"
     )
 
     with open(constants.TAXI_ZONES_FILE_PATH, "wb") as output_file:
