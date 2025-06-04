@@ -24,5 +24,5 @@ def taxi_zones_file () -> None:
         f"https://community-engineering-artifacts.s3.us-west-2.amazonaws.com/dagster-university/data/taxi_zones.csv"
     )
 
-    with open(constants.TAXI_ZONES_FILE_PATH.format(taxi_zones), "wb") as output_file:
+    with open(constants.TAXI_ZONES_FILE_PATH, "wb") as output_file:
         output_file.write(taxi_zones.content)
